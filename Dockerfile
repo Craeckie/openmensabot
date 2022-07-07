@@ -14,6 +14,6 @@ COPY ./ /opt/bot
 
 RUN apk add --virtual .build build-base && \
     pip install -r requirements.txt && \
-    apk del .build && apk clean
+    apk del .build
 
 CMD ["python3", "wsgi.py"]
