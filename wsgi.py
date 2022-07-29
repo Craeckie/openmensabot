@@ -33,17 +33,17 @@ TELEGRAM_ADMIN = int(os.getenv(
     'TELEGRAM_ADMIN',
     0))
 
-if __name__ == "__main__":
-    # For local testing:
-    # Start ngrok server to get a public hostname. See:
-    # https://ngrok.com/download
-    print("Starting ngrok")
-    import ngrok
-    ngrok.start()
-    import time
-    print("Wait for ngrok . . . ")
-    time.sleep(3)
-    PUBLIC_URL = ngrok.getUrl()
+#if __name__ == "__main__":
+#    # For local testing:
+#    # Start ngrok server to get a public hostname. See:
+#    # https://ngrok.com/download
+#    print("Starting ngrok")
+#    import ngrok
+#    ngrok.start()
+#    import time
+#    print("Wait for ngrok . . . ")
+#    time.sleep(3)
+#    PUBLIC_URL = ngrok.getUrl()
 
 
 print("Starting mensabot.Bot")
